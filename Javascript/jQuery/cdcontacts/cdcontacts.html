@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Codingdojo contacts page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+        <script type = "text/javascript">
+            $(document).ready(function() {
+                $("button").click(function(){
+                    var firstName = $("#firstname").val();
+                    var lastName = $("#lastname").val();
+                    var description = $("#description").val();
+                    $("#rightside").append("<div id='card'><p>" + firstName + " " + lastName+"</p><p id ='back' style='display:none'> " + description +'</p></div>');
+                    $("#firstname").val("");
+                    $("#lastname").val("");
+                    $("#description").val("");
+                    return false;
+                });
+                $(document).on("click", "#card", function(){
+                    $(this).children().toggle();
+                });
+              });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="leftside">
+                <form>
+                    <label for="firstname">First Name:</label> <input type="text" name="firstname" id="firstname">
+                    <label for="lastname">Last Name:</label><input type="text" name="lastname" id="lastname">
+                    <label for="descriptoin">Description</label><textarea id="description" rows="5" cols="34">Enter description</textarea>
+                    <button>Add User</button>
+                </form>
+            </div>
+            <div id="rightside">
+            </div>
+        </div>
+    </body>
+</html>

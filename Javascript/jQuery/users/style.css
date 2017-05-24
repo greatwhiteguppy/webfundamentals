@@ -1,0 +1,22 @@
+
+table, tr {
+  border: 2px solid black;
+  width: 600px;
+  margin-bottom: 40px;
+}
+
+#adduser {
+  width: 400px;
+}
+
+h1 {
+  border-bottom: 2px solid black;
+}
+
+input {
+  display: inline-block;
+}
+
+label {
+  display: inline-block;
+}

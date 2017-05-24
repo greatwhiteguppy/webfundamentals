@@ -1,0 +1,34 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Sammi>cd Desktop
+
+C:\Users\Sammi\Desktop> md test
+
+C:\Users\Sammi\Desktop> cd test
+
+C:\Users\Sammi\Desktop\test> copy NUL index.html
+        1 file(s) copied.
+
+C:\Users\Sammi\Desktop\test> copy NUL styles.css
+        1 file(s) copied.
+
+C:\Users\Sammi\Desktop\test> copy NUL commands.txt
+        1 file(s) copied.
+
+C:\Users\Sammi\Desktop\test> copy index.html index_2.html
+        1 file(s) copied.
+
+C:\Users\Sammi\Desktop\test> del styles.css
+
+C:\Users\Sammi\Desktop\test> cd..
+
+C:\Users\Sammi\Desktop> md destination
+
+C:\Users\Sammi\Desktop> move test\index_2.html destination\index_2.html
+        1 file(s) moved.
+
+C:\Users\Sammi\Desktop> rd/s destination
+destination, Are you sure (Y/N)? Y
+
+C:\Users\Sammi\Desktop>

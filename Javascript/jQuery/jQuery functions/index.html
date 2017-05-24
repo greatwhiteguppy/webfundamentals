@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>My jQuery Function Assignment</title>
+    <script
+  src="http://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("h1").click(function(){
+        alert("I feel so excited!");
+      });
+        $("#hide").click(function(){
+          $("#hidep").hide();
+        });
+        $("#show").click(function(){
+          $("#goaty").show();
+        });
+        $("#toggle").click(function(){
+          $("#lights").toggle();
+        });
+        $("#slidedown").click(function(){
+          $("#dancepup").slideDown("slow", function(){
+          });
+        });
+        $("#slideup").click(function(){
+          $("#dancepig").slideUp("slow", function(){
+          });
+        });
+        $("#slidetoggle").click(function(){
+          $("#dancebun").slideToggle("slow", function(){
+          });
+        });
+        $("#fadein").click(function(){
+          $("#peanutbutter").fadeIn("fast", function(){
+          });
+        });
+        $("#fadeout").click(function(){
+          $("#mushrooms").fadeOut("fast", function(){
+          });
+        });
+        $("h2").first().addClass("headlinepink");
+        $("h1").before("<p>Before you move on to anything else...</p>");
+        $("h1").after("<p>After you click the headline, use the buttons below!</p>");
+        $("#append").click(function(){
+          $(".append").append("<p>And then this happened...</p>")
+        });
+        $("#homestar").html("<h3>This reference comes from Homestar Runner. Check it out!</h3>");
+        $("#dancepig").attr( "title", "Dancey Pig");
+        $("input").keyup(function() {
+          var value = $( this ).val();
+          $("#sometext").text(value);
+        });
+        $("#text").text("But first, remember that it's all very silly!");
+        $("div").data("test", {last: "May 10!"} );
+        $("span:last").text($("div").data("test").last);
+    });
+
+    </script>
+  </head>
+  <body>
+    <h1>Click here to find out how I feel about my assignment!</h1>
+      <div id="text"></div>
+      <div class="functions">
+        <button id="hide">Hide</button>
+        <div class="explanation">
+          <h2>Hide</h2>
+          <p id="hidep">Click the button to hide this paragraph.</p>
+        </div>
+      </div>
+      <div class="functions">
+        <button id="show">Show</button>
+        <div class="explanation">
+          <h2>Show</h2>
+          <p>Click the button to show something you can't see yet!</p>
+        </div>
+        <img src="./goaty.jpg" alt="goaty" id="goaty">
+      </div>
+      <div class="functions">
+        <button id="toggle">Toggle</button>
+        <div class="explanation">
+          <h2>Toggle</h2>
+            <div id="homestar"></div>
+          <p>Be like The Cheat doing crazy lightswitch raves! Toggle this light on and off.</p>
+        </div>
+        <img src="./lights.jpg" alt="lights" id="lights">
+    </div>
+    <div class="functions">
+      <button id="slidedown">Slide Down</button>
+      <div class="explanation">
+        <h2>Slide Down</h2>
+        <p>Make this puppy dance! Click the button to reveal a happy dancing dude!</p>
+      </div>
+      <img src="./dancepup.jpg" alt="dancepup" id="dancepup">
+    </div>
+    <div class="functions">
+      <button id="slideup">Slide Up</button>
+      <div class="explanation">
+        <h2>Slide Up</h2>
+        <p>This pig is trying to keep the pup from having fun. Slide him up so the dog can dance alone!</p>
+      </div>
+      <img src="./dancepig.jpg" alt="dancepig" id="dancepig">
+    </div>
+    <div class="functions">
+      <button id="slidetoggle">Slide Toggle</button>
+      <div class="explanation">
+        <h2>Slide Toggle</h2>
+        <p>Guinea pigs and bunnies like dancing with anyone! Toggle them so they can join the dance when they want to.</p>
+      </div>
+      <img src="./dancebun.jpg" alt="dancebun" id="dancebun">
+    </div>
+    <div class="functions">
+      <button id="fadein">Fade In</button>
+      <div class="explanation">
+        <h2>Fade In</h2>
+        <p>What is my favorite food? Press the button to reveal the answer.</p>
+      </div>
+      <img src="./peanutbutter.jpg" alt="peanutbuter" id="peanutbutter">
+    </div>
+    <div class="functions">
+      <button id="fadeout">Fade Out</button>
+      <div class="explanation">
+        <h2>Fade Out</h2>
+        <p>Oh no! I hate mushrooms! Click the button to make them go away!</p>
+      </div>
+      <img src="./mushrooms.jpg" alt="mushrooms" id="mushrooms">
+    </div>
+    <div class="functions">
+      <button id="append">Append</button>
+      <div class="explanation">
+        <h2>Append</h2>
+        <p>Use the buttons to add more to the story.</p>
+        <p class="append">This happened...</p>
+      </div>
+    </div>
+    <div class="somet">
+      <input type="text" value="Put some text in here and see it in a different font below!">
+      <p id="sometext"></p>
+    </div>
+    <div class="functions">
+    <h2>Birthday</h2>
+    <p>Last thing: My birthday is <span></span></p>
+    </div>
+  </body>
+</html>

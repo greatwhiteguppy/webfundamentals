@@ -1,0 +1,45 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  border: 2px dotted chartreuse;
+}
+
+body{
+  background-color: rgb(62,26,47);
+}
+
+body div:first-child{
+  margin: 0 auto;
+  width: 970px;
+  height: 1500px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid rgb(153,0,90);
+  background-color: white;
+}
+
+nav{
+  background-color: rgb(251,194,227);
+  border: 2px solid black;
+}
+
+  nav>a{
+    border: 2px solid black;
+    display: inline-block;
+    padding: 0px;
+  }
+
+  ul{
+    background-color: blue;
+  }
+
+  ul li{
+    background-color: green;
+    list-style: none;
+    display: inline;
+    width: 105px;
+  }
+
+ul li img{
+  display: inline-block;
+}

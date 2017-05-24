@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Users</title>
+    <script
+      src="http://code.jquery.com/jquery-3.1.1.js"
+      integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+      crossorigin="anonymous">
+      </script>
+      <script type = "text/javascript">
+        $(document).ready(function() {
+          $("#addusersub").on("click", function(){
+            var firstName = $("#firstname").val()
+            var lastName = $("#lastname").val()
+            var email = $("#emailaddress").val()
+            var phone = $("#phone").val()
+            $("table").append("<tr><td>" + firstName + "</td><td>" + lastName + "</td><td>" + email + "</td><td>" + phone + "</td></tr>");
+              return false;
+          });
+        });
+      </script>
+  </head>
+  <body>
+    <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email Address</th>
+      <th>Contact #</th>
+    </tr>
+    </table>
+    <div id="adduser">
+      <h1>Add User</h1>
+      <form id="form">
+        <p><label for ="firstname">First Name:</label> <input type="text" name="firstname" value="First Name" id="firstname"></p>
+        <p><label for ="lastname">Last Name:</label> <input type="text" name="lastname" value="Last Name" id="lastname"></p>
+        <p><label for ="emailaddress">Email Address:</label> <input type="text" name="emailaddress" value="Email Address" id="emailaddress"></p>
+        <p><label for="contactnum">Contact #:</label> <input type="text" name="contactnum" value="Phone #" id="phone"></p>
+        <input type="submit" value="Add User" id="addusersub">
+      </form>
+    </div>
+  </body>
+</html>

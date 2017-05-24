@@ -1,0 +1,108 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Sammi> cd Desktop
+
+C:\Users\Sammi\Desktop> cd dojoassignments
+
+C:\Users\Sammi\Desktop\DojoAssignments> cd webfundamentals
+
+C:\Users\Sammi\Desktop\DojoAssignments\WebFundamentals> cd git
+
+C:\Users\Sammi\Desktop\DojoAssignments\WebFundamentals\Git> copy NUL DojoAssignmentRepo.txt
+        1 file(s) copied.
+
+C:\Users\Sammi\Desktop\DojoAssignments\WebFundamentals\Git> cd..
+
+C:\Users\Sammi\Desktop\DojoAssignments\WebFundamentals> cd..
+
+C:\Users\Sammi\Desktop\DojoAssignments> git init
+Initialized empty Git repository in C:/Users/Sammi/Desktop/DojoAssignments/.git/
+
+C:\Users\Sammi\Desktop\DojoAssignments> git add .
+
+C:\Users\Sammi\Desktop\DojoAssignments> git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   MEAN/about.txt
+        new file:   Python/about.txt
+        new file:   Ruby/about.txt
+        new file:   WebFundamentals/CSS/about.txt
+        new file:   WebFundamentals/Git/Day 1 Git/git_practice
+        new file:   WebFundamentals/Git/Day 1 Terminal/Dummy.png
+        new file:   WebFundamentals/Git/Day 1 Terminal/test/commands.txt
+        new file:   WebFundamentals/Git/Day 1 Terminal/test/index.html
+        new file:   WebFundamentals/Git/DojoAssignmentRepo.txt
+        new file:   WebFundamentals/Git/about.txt
+        new file:   WebFundamentals/HTML/about.txt
+        new file:   WebFundamentals/HTML/indentation.html
+        new file:   WebFundamentals/Javascript/about.txt
+        new file:   WebFundamentals/about.txt
+        new file:   WebFundamentals/assignments.txt
+        new file:   iOS/about.txt
+        new file:   netCore/about.txt
+
+
+C:\Users\Sammi\Desktop\DojoAssignments> git commit -m "added files"
+[master (root-commit) fc1ba0d] added files
+ 17 files changed, 38 insertions(+)
+ create mode 100644 MEAN/about.txt
+ create mode 100644 Python/about.txt
+ create mode 100644 Ruby/about.txt
+ create mode 100644 WebFundamentals/CSS/about.txt
+ create mode 160000 WebFundamentals/Git/Day 1 Git/git_practice
+ create mode 100644 WebFundamentals/Git/Day 1 Terminal/Dummy.png
+ create mode 100644 WebFundamentals/Git/Day 1 Terminal/test/commands.txt
+ create mode 100644 WebFundamentals/Git/Day 1 Terminal/test/index.html
+ create mode 100644 WebFundamentals/Git/DojoAssignmentRepo.txt
+ create mode 100644 WebFundamentals/Git/about.txt
+ create mode 100644 WebFundamentals/HTML/about.txt
+ create mode 100644 WebFundamentals/HTML/indentation.html
+ create mode 100644 WebFundamentals/Javascript/about.txt
+ create mode 100644 WebFundamentals/about.txt
+ create mode 100644 WebFundamentals/assignments.txt
+ create mode 100644 iOS/about.txt
+ create mode 100644 netCore/about.txt
+
+C:\Users\Sammi\Desktop\DojoAssignments> git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Sammi\Desktop\DojoAssignments> copy NUL readme.md
+        1 file(s) copied.
+
+C:\Users\Sammi\Desktop\DojoAssignments> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Sammi\Desktop\DojoAssignments> git add .
+
+C:\Users\Sammi\Desktop\DojoAssignments> git commit -m "added readme file"
+[master 50d6346] added readme file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md
+
+C:\Users\Sammi\Desktop\DojoAssignments> git remote add origin https://github.com/greatwhiteguppy/DojoAssignments.git
+
+C:\Users\Sammi\Desktop\DojoAssignments> git push -u origin master
+Counting objects: 15, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (15/15), 65.40 KiB | 0 bytes/s, done.
+Total 15 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+Branch master set up to track remote branch master from origin.
+To https://github.com/greatwhiteguppy/DojoAssignments.git
+ * [new branch]      master -> master
+
+C:\Users\Sammi\Desktop\DojoAssignments>

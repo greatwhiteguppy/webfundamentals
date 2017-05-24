@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> My Blog </title>
+    <meta name="description" content="A blog about Sammi Kaufman and all of the things she loves">
+  </head>
+  <body>
+    <div id="bio">
+      <h1> Sammi Kaufman </h1>
+      <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/16602798_10211994671848866_6492675107676890180_n.jpg?oh=6684c899464be4f750de932dfc30bc01&oe=58FDEB59" alt="Me" height="200" width="200">
+    </div>
+    <div id="main-content">
+      <h2> All About Me </h2>
+      <p> I'm just an aspiring developer who loves <a href="https://www.instagram.com/rickandmortyrickstaverse/?hl=en">Rick and Morty</a>. Enjoy this lorem ipsum Rick and Morty:</p>
+      <p> I am not putting my father in a home! He just came back into my life, and you want to, grab him and, stuff him under a mattress like last month's Victoria's Secret?!
+          They're robots Morty! It's okay to shoot them! They're just robots! There is no god, Summer; gotta rip that band-aid off now you'll thank me later.</p>
+      <p> You know what a vole is, Morty? You know what a vole is? Well look where being smart got you. Whoa, spoilers! I'm a whole season behind. Your failures are your own,
+          old man! I say, follow throooough!</p>
+      <p> This is because you give Morty Smith bad grades, bitch! Are you kidding? I'm hoping I can get to both of them, Rick! What is this, 90's Conan? That just sounds
+          like slavery with extra steps. </p>
+      <p> Pluto's a planet. Oh, we're welllll past that, Jerry! Awww, it's you guys! My name is Slip- Slippery Stair. I'll take ya down there for 25 shmeckels! </p>
+      <p> "Quantum carburetor"? Jesus, Morty. You can't just add a Sci-Fi word to a car word and hope it means something… Huh, looks like something's wrong with the
+          microverse battery. We're gonna have to go inside. Meeseeks don't usually have to exist for this long. It's gettin' weeeiiird. We are created to serve a singular purpose,
+          for which we will go to any lengths to fulfill! Why don't you ask the smartest people in the universe, Jerry? Oh yeah you can't. They blew up.</p>
+    </div>
+    <h2> Favorite Episodes </h2>
+    <ul>
+        <li>Total Rickall</li>
+        <li>The Ricks Must Be Crazy</li>
+        <li>Something Ricked This Way Comes</li>
+        <li>Interdimensional Cablie (1 or 2)</li>
+        <li>Look Who's Purging Now</li>
+    </ul>
+    <h2> The Table of Rick's Relationships </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Character</th>
+          <th>Relationship</th>
+          <th>Rick's Opinion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rick</td>
+          <td>Himself</td>
+          <td>Isn't it obvious?</td>
+        </tr>
+        <tr>
+          <td>Beth</td>
+          <td>Daughter</td>
+          <td>Beautiful and perfect</td>
+        </tr>
+        <tr>
+          <td>Morty</td>
+          <td>Grandson</td>
+          <td>A necessary idiot</td>
+        </tr>
+        <tr>
+          <td>Jerry</td>
+          <td>Son-in-law</td>
+          <td>An unnecessary idiot</td>
+        </tr>
+      </table>
+      <h2> Please take this short survey! </h2>
+      <form action="process.php" method="post">
+        <p>
+          <label for="favorite-character"> Favorite Character </label>
+          <select name="favorite-character" id="favorite-character">
+            <option value="morty"> Morty </option>
+            <option value="rick"> Rick </option>
+            <option value="summer"> Summer </option>
+            <option value="beth"> Beth </option>
+            <option value="jerry"> Jerry </option>
+            <option value="birdperson"> Birdperson </option>
+            <option value="other"> Other </option>
+          </select>
+        </p>
+        <p>
+          <label for="favorite-episode">Favorite Episode:</label>
+          <input type="text" id="favorite-episode" name="favorite-episode">
+        </p>
+        <p>
+          <label for="watches-rm">I watch Rick and Morty</label>
+          <input type="radio" id="watches-rm" name="watches-rm" value="does-watch">
+          <label for="does-not-watch">I do not watch Rick and Morty</label>
+          <input type="radio" id="does-not-watch" name="does-not-watch" value="no-watch">
+        </p>
+          <h4>I watch Rick and Morty the following ways (check all that apply):</h4>
+          <p><label for="hulu">Hulu</label><input type="checkbox" id="hulu" name="watch" value="hulu"></p>
+          <p><label for="adult-swim">Adult Swim</label><input type="checkbox" id="adult-swim" name="watch" value="adult-swim"></p>
+          <p><label for="illegally">Illegally (don't tell!)</label><input type="checkbox" id="illegally" name="watch" value="illegally"></p>
+          <p><label for="never">I don't watch at all</label><input type="checkbox" id="never" name="watch" value="never"></p>
+          <p><input type="submit" value="Click here to submit"></p>
+      </form>
+
+  </body>
+</html>

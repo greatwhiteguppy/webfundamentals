@@ -1,0 +1,12 @@
+*{
+  margin: 0px auto;
+}
+
+#ninjatocat {
+  padding: 50px;
+}
+
+#ninjatocat img {
+  display: block;
+  margin-bottom: 2px;
+}

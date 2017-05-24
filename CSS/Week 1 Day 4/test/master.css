@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 10px 10px 10px 0px;
+    border: 2px solid black;
+    display: block;
+}
+
+h1 {
+    background-color: pink;
+}
+
+ul li {
+    background-color: turquoise;
+    margin: 25px;
+}
+
+li {
+    background-color: purple;
+}
+
+#bigheader
+{
+    border-radius: 10px;
+    font-family: fantasy;
+}
+
+ul .listy {
+    background-color:  chartreuse;
+}
+
+ul #dalie {
+    background-color: brown;
+}

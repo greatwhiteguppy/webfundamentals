@@ -1,0 +1,129 @@
+* {
+    margin: 0 auto;
+    font-family: helvetica;
+}
+
+#wrapper {
+    width: 970px;
+    background: linear-gradient(rgb(41,24,29), rgb(111,89,100))
+}
+
+#header {
+    background: rgb(247,247,247);
+}
+
+h1 {
+    display: inline-block;
+}
+
+.heading_left {
+    font-family: "Comic Sans MS"
+}
+
+.heading_right {
+    float: right;
+    font-size: 26px;
+    padding-top: 10px;
+}
+#picture>img {
+    width: auto;
+    height: 250px;
+    border: 10px solid rgb(247,247,247);
+    margin: 20px;
+}
+
+#picture {
+    display: inline-block;
+}
+
+.about-module {
+    height: 270px;
+    width: 460px;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    background: linear-gradient(rgb(218,204,217), rgb(254,253,253))
+}
+
+.subhead {
+    font-family: sans-serif;
+    font-size: 16;
+    text-align: right;
+}
+
+h2 {
+    padding: 4px;
+    background: linear-gradient(rgb(135,133,147), rgb(172,172,177), rgb(135,133,147));
+    color: white;
+    font-size: 22px;
+}
+
+h3 {
+    background: linear-gradient(rgb(135,133,147), rgb(172,172,177), rgb(135,133,147));
+    color: white;
+    font-size: 18px;
+    padding: 2px;
+}
+
+#second-row {
+    width: 96%
+}
+
+.second-row-images {
+    width: 284px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    padding: 5px;
+}
+
+.column {
+    display: inline-block;
+    width: 284px;
+    margin: 10px;
+    background: linear-gradient(rgb(218,204,217), rgb(254,253,253))
+}
+
+.column>p {
+    height: 185px;
+    padding-left: 10px;
+}
+
+.button {
+    background-color:green;
+    border: 2px solid black;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer_image {
+    width: 20px;
+    height: auto;
+}
+
+#footer {
+    background-color: rgb(247,247,247);
+    text-align: center;
+    font-size: 16px;
+}
+
+#footer>a {
+    font-style: italic;
+}
+
+a {
+    color: black;
+}
